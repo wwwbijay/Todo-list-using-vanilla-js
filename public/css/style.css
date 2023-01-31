@@ -38,6 +38,11 @@ h1 {
   padding: 2rem;
   text-align: center;
 }
+
+header h1{
+  margin: 10px 0;
+  font-size: 30px;
+}
 .todo-button,
 .todo-input{
   font-size: 1em;
@@ -81,17 +86,19 @@ button:hover {
   background: #fff;
   display: flex;
   justify-content: space-between;
-  color: #555;
+  color: #333;
   font-size: 1em;
   align-items: center;
   margin: 8px 0;
 }
 .todo li{
   flex: 1;
+  text-align: left;
+  padding-left: 14px;
 }
 .trash-btn,
 .complete-btn{
-  padding: 0.9rem;
+  padding: 0.8rem;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -100,8 +107,12 @@ button:hover {
   background-color: #14a14a;
 }
 .complete-btn:hover{
-  background: #14a14a;
+  background-image: linear-gradient(to right top, #14a14a, #15ad4f, #16b955, #18c65a, #19d260);
 }
 .trash-btn{
-  background-color: #ff0844;
+  background-color: #d30303;
+}
+
+i{
+  pointer-events: none;
 }
