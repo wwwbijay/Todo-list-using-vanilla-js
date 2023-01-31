@@ -10,14 +10,16 @@ todoButton.addEventListener('click', addTodo);
 //Functions
 function addTodo(e){
   e.preventDefault();
-
+  if(!todoInput.value){
+    return null;
+  }
   //create todo-item div
   const todoDiv = document.createElement('div');
   todoDiv.classList.add('todo');
 
   //create li
   const newTodo = document.createElement('li');
-  newTodo.innerText = 'Todo list item';
+  newTodo.innerText = todoInput.value;
   newTodo.classList.add('todo-item');
   todoDiv.appendChild(newTodo);
 

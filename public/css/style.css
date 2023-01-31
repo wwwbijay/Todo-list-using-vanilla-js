@@ -62,7 +62,46 @@ button:hover {
   background-color: #fff;
   border-radius: 30px;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  
+  border-bottom-right-radius: 0;  
   width: 220px;
+}
+
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list{
+  list-style: none;
+  padding: 0;
+  width: 90%;
+}
+.todo{
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 1em;
+  align-items: center;
+  margin: 8px 0;
+}
+.todo li{
+  flex: 1;
+}
+.trash-btn,
+.complete-btn{
+  padding: 0.9rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.complete-btn{
+  background-color: #14a14a;
+}
+.complete-btn:hover{
+  background: #14a14a;
+}
+.trash-btn{
+  background-color: #ff0844;
 }
