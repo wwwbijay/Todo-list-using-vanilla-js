@@ -40,7 +40,7 @@ h1 {
 }
 
 header h1{
-  margin: 10px 0;
+  margin: 10px 0 30px;
   font-size: 30px;
 }
 .todo-button,
@@ -49,7 +49,9 @@ header h1{
   font-weight: 500;
   border: none;
   border-radius: 5px;
-  padding: 0.6em 1.2em;
+  padding: 0.8em 1.2em;
+  
+  outline: none;
 }
 .todo-button {
   background-image: linear-gradient(to top, #ff0844 0%, #f33d3d 100%);
@@ -58,6 +60,7 @@ header h1{
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.5) 8px 8px 8px -8px;
 }
 button:hover {
   background-image: linear-gradient(to top, #fa4545 0%, #ff0844 100%);
@@ -66,26 +69,29 @@ button:hover {
   background-color: #fff;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;  
-  width: 220px;
+  width: 310px;
+  box-shadow: rgba(50, 50, 93, 0.45) 4px 4px 5px 0px inset, rgba(0, 0, 0, 0.5) 8px 8px 8px -8px;
 }
 
 .todo-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 347px;
+  margin: 20px auto;
 }
 
 .todo-list{
   list-style: none;
   padding: 0;
-  width: 90%;
+  width: 100%;
   margin: 5px 0;
 }
 .todo{
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   display: flex;
   justify-content: space-between;
-  color: #333;
+  color: #000;
   font-size: 1em;
   align-items: center;
   margin: 8px 0;
@@ -119,4 +125,9 @@ i{
   text-decoration: line-through;
   font-style: italic;
   opacity: 0.5;
+}
+
+.fall{
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
