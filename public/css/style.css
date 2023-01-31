@@ -48,13 +48,13 @@ header h1{
   font-size: 1em;
   font-weight: 500;
   border: none;
+  border-radius: 5px;
   padding: 0.6em 1.2em;
 }
 .todo-button {
   background-image: linear-gradient(to top, #ff0844 0%, #f33d3d 100%);
   font-family: inherit;
   cursor: pointer;
-  border-radius: 30px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   color: #fff;
@@ -62,10 +62,8 @@ header h1{
 button:hover {
   background-image: linear-gradient(to top, #fa4545 0%, #ff0844 100%);
 }
-
 .todo-input{
   background-color: #fff;
-  border-radius: 30px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;  
   width: 220px;
@@ -81,6 +79,7 @@ button:hover {
   list-style: none;
   padding: 0;
   width: 90%;
+  margin: 5px 0;
 }
 .todo{
   background: #fff;
@@ -90,6 +89,7 @@ button:hover {
   font-size: 1em;
   align-items: center;
   margin: 8px 0;
+  transition: all ease 0.5s;
 }
 .todo li{
   flex: 1;
@@ -112,7 +112,11 @@ button:hover {
 .trash-btn{
   background-color: #d30303;
 }
-
 i{
   pointer-events: none;
+}
+.completed {
+  text-decoration: line-through;
+  font-style: italic;
+  opacity: 0.5;
 }
