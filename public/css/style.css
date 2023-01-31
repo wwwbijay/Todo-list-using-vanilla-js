@@ -1,0 +1,68 @@
+:root {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.wrap{
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.todo-button,
+.todo-input{
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  padding: 0.6em 1.2em;
+}
+.todo-button {
+  background-image: linear-gradient(to top, #ff0844 0%, #f33d3d 100%);
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: #fff;
+}
+button:hover {
+  background-image: linear-gradient(to top, #fa4545 0%, #ff0844 100%);
+}
+
+.todo-input{
+  background-color: #fff;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  
+  width: 220px;
+}

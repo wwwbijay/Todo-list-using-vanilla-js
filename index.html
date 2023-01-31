@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&family=Ribeye+Marrow&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Bj's Todo Lists</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            class="todo-input"
+            placeholder="Enter todo list here"
+          /><button class="todo-button" type="submit">
+            <i class="fa fa-plus"></i>
+          </button>
+        </form>
+        <div class="todo-container">
+          <ul class="todo-list">
+            <div class="todo-item">
+              <li></li>
+              <button>Delete</button>
+              <button>Checked</button>
+            </div>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
